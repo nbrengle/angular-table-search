@@ -1,3 +1,66 @@
-<h1>
-  {{title}}
-</h1>
+<search-text [searchText]="searchText"> </search-text>
+
+<div class="field">
+    <input [(ngModel)]="searchText" />
+    <button (click) = search(searchText)>Search</button>
+</div>
+
+<div>
+    <h2>Found :</h2>
+    <table>
+        <header>
+            <th *ngFor="let prop of patientProperties()">
+                {{ prop }}
+            </th>
+        </header>
+        <body>
+            <tr *ngFor="let patient of foundPatients">
+                <td>
+                    {{patient.firstName}}
+                </td>
+                <td>
+                    {{patient.lastName}}
+                </td>
+                <td>
+                    {{patient.emailAddress}}
+                </td>
+                <td>
+                    {{patient.profileImage}}
+                </td>
+                <td>
+                    {{patient.doctorName}}
+                </td>
+            </tr>
+        </body>
+    </table>
+</div>
+
+<div>
+    <h2>List:</h2>
+    <table>
+        <header>
+            <th *ngFor="let prop of patientProperties()">
+                {{ prop }}
+            </th>
+        </header>
+        <body>
+            <tr *ngFor="let patient of patients, let i of index">
+                <td>
+                    {{patient.firstName}}
+                </td>
+                <td>
+                    {{patient.lastName}}
+                </td>
+                <td>
+                    {{patient.emailAddress}}
+                </td>
+                <td>
+                    {{patient.profileImage}}
+                </td>
+                <td>
+                    {{patient.doctorName}}
+                </td>
+            </tr>
+        </body>
+    </table>
+</div>

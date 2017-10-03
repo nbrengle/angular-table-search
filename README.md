@@ -1,5 +1,27 @@
 # AngularTableSearch
+FIRST NAME : Nathaniel  
+LAST NAME : Brengle  
+GITHUB URL : https://github.com/nbrengle/angular-table-search
+TODAY'S DATE : 2 October 2017
+CSC 436  
+HOMEWORK : #3  
+COMPLEXITY: Medium  
+APPROX HOURS INVESTED IN ASSIGNMENT : 4  
+EXPECTED GRADE : A  
+PARTICIPATION SOURCE CODE :  
+* Angular Product @ https://github.com/nbrengle/angular-product-list
 
+APPLICATION INTENT :  
+* Presented pretty devoid of styling, focused on functionality
+* If pretty apps matter to you, lemme know and I'll prettify future apps
+* To demonstrate the beginnings of a type-ahead searchText
+* To allow searching on a table of elements
+* It's possible to input two-word search strings
+** the first word is used as a regex against the columns
+** the second word is then used as a regex into the contents in that columns
+* If a one word search string is used, it is compared with all values in all columns
+
+TO RUN :  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
